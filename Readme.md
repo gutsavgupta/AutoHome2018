@@ -21,4 +21,4 @@ Currently we are starting from basic features as follows
 
 * [Avinash Chambhare]()
 * [Satyam Dwivedi]()
-* [Utsav Gupta][https://gutsavgupta.github.io/]
+* [Utsav Gupta](https://gutsavgupta.github.io/)
