@@ -1,0 +1,4 @@
+{
+    "sketch": "EmbeddedController\\EmbeddedController.ino",
+    "board": "arduino:avr:uno"
+}

@@ -1,8 +1,8 @@
 /*********************************************************************/
 /**** This Program contains arduino code for door lock and close  ****/
-/**** Author:                                                     ****/
-/**** Date                                                        ****/
-/**** Functionality:                                              ****/
+/**** Author: Utsav                                               ****/
+/**** Date  : 2/11/18                                             ****/
+/**** Functionality: Door Lock APIS                               ****/
 /*********************************************************************/
 
 
