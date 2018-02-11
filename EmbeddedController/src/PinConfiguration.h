@@ -3,8 +3,8 @@
 /** used for arduino and other common defination  **/
 /***************************************************/
 
-#ifndef ARDUINO_PIN_CONFIG_
-#define ARDUINO_PIN_CONFIG_
+#ifndef _ARDUINO_PIN_CONFIG
+#define _ARDUINO_PIN_CONFIG
 
 #define LOCK_CTR_P 9
 #define GATE_STS_P 10

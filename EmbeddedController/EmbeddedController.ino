@@ -1,21 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 /*********** Board Definitions *********/ 
-#define ARDUINO_UNO
-#define FNGR_SENSOR
-#define DOOR_SENSOR
-#define LOCK_SENSOR
-#define WIFI_MODULE
-#define DOOR_MODULE
+#include "src/FeatureMacro.h"
+#include "src/PinConfiguration.h"
 /***************************************/
 
 /*********** User Libraries ************/
-#include "PinConfiguration.h"
-
+#include "src/DoorLockController/DoorLockController.h"
+#include "src/FingerPrintSensor/FingerPrintSensor.h"
 /***************************************/
-
 
 
  
@@ -24,6 +15,7 @@ void setup()
 {
     /** Contains the setup details **/
     /** Add comments for non-trivial section **/
+    LockDoor(2);
 
 }
 

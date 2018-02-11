@@ -5,12 +5,11 @@
 /**** Functionality: Door Lock APIS                               ****/
 /*********************************************************************/
 
+#include "DoorLockCOntroller.h"
 
-#include <stdio.h>
-#include <string.h>
-
-
-int main()
+int LockDoor(int time)
 {
     return 0;
 }
+
+

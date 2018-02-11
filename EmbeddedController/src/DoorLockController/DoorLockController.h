@@ -4,11 +4,13 @@
 /**** Date  : 2/11/18                                             ****/
 /**** Functionality: Door Lock APIS                               ****/
 /*********************************************************************/
+#ifndef _DOOR_LOCK_CONTROLLER
+#define _DOOR_LOCK_CONTROLLER
+
 #include "../PinConfiguration.h"
 #include "../FeatureMacro.h"
 
 #ifdef DOOR_MODULE
-#include <avr/interrupt.h>
 #include <Arduino.h>
 #include <Servo.h>
 
@@ -28,5 +30,7 @@ int UnLockDoor(int time);
 int setDoorStatus(DOOR_STS status);
 
 DOOR_STS getDoorStatus();
+
+#endif
 
 #endif

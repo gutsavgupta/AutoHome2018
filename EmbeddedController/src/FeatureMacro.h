@@ -3,8 +3,8 @@
 /** used for arduino and other common defination  **/
 /***************************************************/
 
-#ifndef FEATURE_MACRO_
-#define FEATURE_MACRO_
+#ifndef _FEATURE_MACRO
+#define _FEATURE_MACRO
 
 #define ARDUINO_UNO
 #define FNGR_SENSOR
