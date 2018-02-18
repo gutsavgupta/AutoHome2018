@@ -7,9 +7,5 @@
 
 #include "DoorLockCOntroller.h"
 
-int LockDoor(int time)
-{
-    return 0;
-}
 
 

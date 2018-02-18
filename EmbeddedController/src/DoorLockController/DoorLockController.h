@@ -7,29 +7,57 @@
 #ifndef _DOOR_LOCK_CONTROLLER
 #define _DOOR_LOCK_CONTROLLER
 
+/** Configuration libraries **/
 #include "../PinConfiguration.h"
 #include "../FeatureMacro.h"
+#include "../Utility.h"
 
 #ifdef DOOR_MODULE
+/** Module specific libraries **/
 #include <Arduino.h>
 #include <Servo.h>
 
-typedef struct
+/** tDoorDiver class, contains variable and functionality
+ ** required to control door locking system. This class
+ ** implements api to get current status and drive motor
+ ** to lock/unlock the door **/
+
+class tDoorDriver
 {
-    int lastLockTime;
-    int lastUnlockTime;
-    int currentState;
-}DOOR_STS;
+    public:
+        /** Constructor **/
+        tDoorDriver();
 
-/** APIS for lock and unlock door **/
-int LockDoor(int time);
+        /** TODO: call constructor with pin setup **/
 
-int UnLockDoor(int time);
+        /** TODO: implement pin setup functions **/
 
-/** APIS for get/set lock status  **/
-int setDoorStatus(DOOR_STS status);
+        /** TODO: Lock Driver functions **/
 
-DOOR_STS getDoorStatus();
+        /** APIs for lock and unlock door **/
+        byte LockDoor();
+
+        byte UnLockDoor();
+
+        /** APIs for get/set Door status  **/
+        byte setDoorStatus();
+
+        byte getDoorStatus();
+
+
+    private:
+        /** TODO: Add pin details **/
+        byte dummyPin;
+
+        /** State variables **/
+        byte DoorState;
+        byte LockState;
+        word LastLockT;
+        word LastUnlockT;
+
+    protected:
+
+}
 
 #endif
 

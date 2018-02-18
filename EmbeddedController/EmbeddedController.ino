@@ -15,7 +15,6 @@ void setup()
 {
     /** Contains the setup details **/
     /** Add comments for non-trivial section **/
-    LockDoor(2);
 
 }
 
